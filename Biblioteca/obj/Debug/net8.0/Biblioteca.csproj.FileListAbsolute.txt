@@ -1,0 +1,11 @@
+/home/et12alumno/Escritorio/Numero/Biblioteca/bin/Debug/net8.0/Biblioteca.deps.json
+/home/et12alumno/Escritorio/Numero/Biblioteca/bin/Debug/net8.0/Biblioteca.dll
+/home/et12alumno/Escritorio/Numero/Biblioteca/bin/Debug/net8.0/Biblioteca.pdb
+/home/et12alumno/Escritorio/Numero/Biblioteca/obj/Debug/net8.0/Biblioteca.GeneratedMSBuildEditorConfig.editorconfig
+/home/et12alumno/Escritorio/Numero/Biblioteca/obj/Debug/net8.0/Biblioteca.AssemblyInfoInputs.cache
+/home/et12alumno/Escritorio/Numero/Biblioteca/obj/Debug/net8.0/Biblioteca.AssemblyInfo.cs
+/home/et12alumno/Escritorio/Numero/Biblioteca/obj/Debug/net8.0/Biblioteca.csproj.CoreCompileInputs.cache
+/home/et12alumno/Escritorio/Numero/Biblioteca/obj/Debug/net8.0/Biblioteca.dll
+/home/et12alumno/Escritorio/Numero/Biblioteca/obj/Debug/net8.0/refint/Biblioteca.dll
+/home/et12alumno/Escritorio/Numero/Biblioteca/obj/Debug/net8.0/Biblioteca.pdb
+/home/et12alumno/Escritorio/Numero/Biblioteca/obj/Debug/net8.0/ref/Biblioteca.dll
