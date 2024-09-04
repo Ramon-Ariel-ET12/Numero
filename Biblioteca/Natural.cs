@@ -3,32 +3,36 @@ namespace Biblioteca;
 public class Natural
 {
     public int Numero;
-    public Natural(){}
+    public Natural() { }
     public Natural(int numero)
     {
-        if (EsNatural(numero))
-        {
-            Numero = numero;
-        }
+        Numero = numero;
+    }
+
+    public void Mostar()
+    {
+        EsNatural();
         EsUno();
         EsPrimo();
+        EsCompuesto();
     }
-    private bool EsNatural(int numero)
+    public bool EsNatural()
     {
-        if (numero < 1)
+        if (Numero < 1)
         {
-            Console.WriteLine($"El {numero} no es natural");
+            Console.WriteLine($"El numero ingresado no es natural, vuelva a intentarlo");
+            Thread.Sleep(3000);
             return false;
         }
-        Console.WriteLine($"El {numero} es natural");
         return true;
-    }
+    } 
+    
 
     private bool EsUno()
     {
         if (Numero == 1)
         {
-            System.Console.WriteLine("El numero ingresado es uno");
+            Console.WriteLine("El numero ingresado es uno");
             return false;
         }
         Console.WriteLine("El numero ingresado no es uno");
@@ -39,18 +43,47 @@ public class Natural
     {
         if (Numero == 1)
         {
-            System.Console.WriteLine("Es Primo");
+            Console.WriteLine("Es Primo");
             return true;
         }
         for (int i = 2; i < Numero; i++)
         {
-            if (Numero%i == 0)
+            if (Numero % i == 0)
             {
                 Console.WriteLine("No es primo");
                 return false;
             }
         }
-        System.Console.WriteLine("Es Primo");
+        Console.WriteLine("Es Primo");
         return true;
+    }
+    private bool EsCompuesto()
+    {
+        for (int i = 2; i < Numero; i++)
+        {
+            if (Numero % i == 0)
+            {
+                Console.WriteLine("Es Compuesto");
+                return true;
+            }
+        }
+        Console.WriteLine("No es Compuesto");
+        return false;
+    }
+
+    public void Sumar(int numero) => Numero = +numero;
+    public void Sumar(Natural natural) => Numero =+ natural.Numero;
+    public void OperadorPlus(int numero) { }
+    public void OperadorPlus(Natural natural) { }
+    public void OperadorPlusPlus() => Numero++;
+    public void PlusPlusOperador()
+    {
+        if (Numero == 1)
+        {
+            Console.WriteLine("\nEl numero natural no puede ser menor a 1\n");
+            Thread.Sleep(2000);
+        }
+        else
+            Numero--;
     }
 }
